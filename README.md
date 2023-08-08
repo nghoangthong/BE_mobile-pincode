@@ -19,7 +19,7 @@
 ### Update hosts file
 
     # BEGIN EXAMPLE EXPRESSJS PROJECT
-    127.0.0.1       bill-payment.alphacore.tech
+    127.0.0.1       mobile-pincode.alphacore.tech
     # END
 
 ### Run project
@@ -30,7 +30,7 @@
 
 ### Browse site at
 
-    https://bill-payment.alphacore.tech:3001/v1/[resource]/[sub-resource]
+    https://mobile-pincode.alphacore.tech:3001/v1/[resource]/[sub-resource]
 
 # API Testing Tool
 - Postman Tool: https://www.getpostman.com
