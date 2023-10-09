@@ -1,13 +1,8 @@
-const newsRouter = require('./news');
-const postsRouter = require('./posts');
-
+const pincodeRouter = require('./pincode')
+const serviceRouter = require('./services')
 function route(app) {
-    app.get('/', (req, res) => {
-        res.send('Hello World!');
-    });
-
-    app.use('/v1/news', newsRouter);
-    app.use('/v1/posts', postsRouter);
-}
+    app.use('/v1/shopcard', pincodeRouter)
+    app.use('/v1', serviceRouter)
+}   
 
 module.exports = route;

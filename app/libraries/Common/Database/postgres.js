@@ -1,73 +1,85 @@
-const Connections = require('./connections');
-const { Pool } = require('pg');
+const Connection = require('./Connection');
+const {Pool} = require('pg');
 
-class PostgreSQL extends Connections {
-    // protected pool: Pool;
-    constructor() { 
+/**
+ * Provide its all interfaces to interact with CRUD
+ */
+class Postgres extends Connection {
+    /**
+     * Initiate Postgres instance
+     */
+    constructor() {
         super('postgres');
-
-        const configDB = global.APP_SETTINGS.POSTGRES_CONNECTION_STRING;
+        const connectionStr = global.APP_SETTINGS.POSTGRES_CONNECTION_STRING;
 
         this.pool = new Pool({
-            host: configDB.host, // Change this to your PostgreSQL server's address if it's remote
-            database: configDB.database,
-            user: configDB.user,
-            password: configDB.password,
-            port: configDB.port, // Default PostgreSQL port is 5432
+            host: connectionStr.host, // Change this to your PostgreSQL server's address if it's remote
+            port: connectionStr.port, // Default PostgreSQL port is 5432
+            database: connectionStr.database,
+            user: connectionStr.user,
+            password: connectionStr.password
         });
+
+        this.pool.query('SET TIME ZONE \'Asia/Ho_Chi_Minh\'');
+        Logger.info('Postgres::constructor -- Executed query to set timezone=\'Asia/Ho_Chi_Minh\'.');
     }
-    
-    // Method to connect to the database
+
+    /**
+     * Method to connect to the database
+     * @returns {Promise<void>}
+     */
     async connect() {
         try {
             await this.pool.connect();
-            console.log('Connected to PostgreSQL database');
+            Logger.info('Postgres::connect -- Connected to PostgreSQL database.');
         } catch (err) {
-            console.error('Error connecting to the database', err);
+            Logger.error('Postgres::connect -- Error connecting to the database.');
+            Logger.error(err);
             throw err;
         }
     }
 
-    // Method to disconnect from the database
+    /**
+     * Method to disconnect from the database
+     * @returns {Promise<void>}
+     */
     async disconnect() {
         try {
             await this.pool.end();
-            console.log('Disconnected from PostgreSQL database');
+            Logger.info('Postgres::disconnect -- Disconnected from PostgreSQL database.');
         } catch (err) {
-            console.error('Error disconnecting from the database', err);
+            Logger.error('Postgres::disconnect -- Error disconnecting from the database.');
+            Logger.error(err);
             throw err;
         }
     }
 
+    /**
+     * Method to execute query
+     *
+     * @param text
+     * @param params
+     * @returns {Promise<*>}
+     */
     async query(text, params) {
+        const startTime = Date.now();
         try {
-          const result = await this.pool.query(text, params);
+            Logger.debug('Postgres::query -- Executing query...');
+            Logger.debug(text);
+            Logger.debug(params);
 
-          return result;
+            let result = await this.pool.query(text, params);
+            let durationTime = Date.now() - startTime;
+
+            Logger.debug('Executed query ', text, ` - duration: ${durationTime} - parameters:`, params);
+
+            return result;
         } catch (err) {
-          console.error('Error executing query', err);
-          throw err;
+            Logger.error('Postgres::query -- Error executing query.');
+            Logger.error(err);
+            throw err;
         }
-      }
+    }
 }
 
-// // Test the database connection
-// pool.connect((err, client, done) => {
-//     if (err) {
-//       console.error('Error connecting to the database', err);
-//     } else {
-//       console.log('Connected to PostgreSQL database');
-//       done(); // release the client back to the pool
-//     }
-// });
-
-// async function connect() {
-//     try {
-//         await mongoose.connect('mongodb://127.0.0.1:27017/alpha')
-//             .then(() => console.log('Connected!'));
-//     } catch (error) {
-//         console.log('Connected Failed');
-//     }
-// }
-
-module.exports = PostgreSQL;
+module.exports = Postgres;

@@ -1,0 +1,24 @@
+{
+    "Success": {
+      "0": "Thành công"
+    },
+    "Error": {
+      "1": "Thông tin yêu cầu thiếu hoặc không hợp lệ",
+      "2": "Signature không hợp lệ",
+      "11": "Partner không tồn tại",
+      "12": "Số dư không đủ",
+      "13": "Partner đã bị khoá",
+      "14": "API Key ko tồn tại",
+      "24": "RSA Public Key chưa được thiết lập hoặc không hợp lệ",
+      "31": "Mã giao dịch bị trùng",
+      "71": "Thẻ không tồn tại hoặc không có sẵn",
+      "36": "Giao dịch không tồn tại",
+      "72": "Thẻ không tồn tại hoặc không có sẵn",
+      "92": "IP không được phép truy cập",
+      "73": "Số lượng thẻ mua truyền vào không hợp lệ"
+    },
+    "Pending": {
+      "500": "Hệ thống gặp lỗi, vui lòng thử lại sau"
+    }
+  }
+  

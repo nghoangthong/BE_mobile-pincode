@@ -1,0 +1,196 @@
+{
+  "service_categories":{
+    "AppotaCard": "Thẻ cào AppotaCard",
+    "Vinaphone": "Thẻ cào Vinaphone",
+    "Viettel": "Thẻ cào Viettel",
+    "Mobifone": "Thẻ cào Mobifone",
+    "VNMobile": "Thẻ cào VNMobile",
+    "Beeline": "Thẻ cào Beeline",
+    "Zing": "Thẻ cào Zing",
+    "VCoin": "Thẻ cào VCoin",
+    "Gate": "Thẻ cào Gate",
+    "Garena": "Thẻ cào Garena",
+    "Mega": "Thẻ cào Mega",
+    "SCoin": "Thẻ cào SCoin",
+    "OnCash": "Thẻ cào OnCash",
+    "Soha": "Thẻ cào Soha",
+    "Funtap": "Thẻ cào Funtap"
+  },
+  "service_item": {
+    "AppotaCard": {
+      "AC10": "thẻ 10k",
+      "AC20": "thẻ 20k",
+      "AC50": "thẻ 50k",
+      "AC100": "thẻ 100k",
+      "AC200": "thẻ 200k",
+      "AC300": "thẻ 300k",
+      "AC500": "thẻ 500k",
+      "AC1000": "thẻ 1M",
+      "AC2000": "thẻ 2M",
+      "AC3000": "thẻ 3M",
+      "AC5000": "thẻ 5M"
+    },
+
+    "Vinaphone": {
+      "VINA20": "thẻ 20k",
+      "VINA50": "thẻ 50k",
+      "VINA100": "thẻ 100k",
+      "VINA200": "thẻ 200k",
+      "VINA500": "thẻ 500k",
+      "VINA1000": "thẻ 1M"
+    },
+    "Viettel": {
+      "VTT10": "thẻ 10k",
+      "VTT20": "thẻ 20k",
+      "VTT50": "thẻ 50k",
+      "VTT100": "thẻ 100k",
+      "VTT200": "thẻ 200k",
+      "VTT500": "thẻ 500k",
+      "VTT1000": "thẻ 1M"
+    },
+    "Mobifone": {
+      "MOBI10": "thẻ 10k",
+      "MOBI20": "thẻ 20k",
+      "MOBI50": "thẻ 50k",
+      "MOBI100": "thẻ 100k",
+      "MOBI200": "thẻ 200k",
+      "MOBI500": "thẻ 500k",
+      "MOBI1000": "thẻ 1M"
+    },
+    "VNMobile": {
+      "VNM10": "thẻ 10k",
+      "VNM20": "thẻ 20k",
+      "VNM50": "thẻ 50k",
+      "VNM100": "thẻ 100k",
+      "VNM200": "thẻ 200k",
+      "VNM500": "thẻ 500k",
+      "VNM1000": "thẻ 1M"
+    },
+    "Beeline": {
+      "BEE10": "thẻ 10k",
+      "BEE20": "thẻ 20k",
+      "BEE50": "thẻ 50k",
+      "BEE100": "thẻ 100k",
+      "BEE200": "thẻ 200k",
+      "BEE500": "thẻ 500k",
+      "BEE1000": "thẻ 1M"
+    },
+    "Zing": {
+      "ZING10": "thẻ 10k",
+      "ZING20": "thẻ 20k",
+      "ZING50": "thẻ 50k",
+      "ZING100": "thẻ 100k",
+      "ZING200": "thẻ 200k",
+      "ZING300": "thẻ 300k",
+      "ZING500": "thẻ 500k",
+      "ZING1000": "thẻ 1M",
+      "ZING2000": "thẻ 2M",
+      "ZING3000": "thẻ 3M",
+      "ZING5000": "thẻ 5M"
+    },
+    "VCoin":{
+      "VCOIN10": "thẻ 10k",
+      "VCOIN20": "thẻ 20k",
+      "VCOIN50": "thẻ 50k",
+      "VCOIN100": "thẻ 100k",
+      "VCOIN200": "thẻ 200k",
+      "VCOIN300": "thẻ 300k",
+      "VCOIN500": "thẻ 500k",
+      "VCOIN1000": "thẻ 1M",
+      "VCOIN2000": "thẻ 2M",
+      "VCOIN3000": "thẻ 3M",
+      "VCOIN5000": "thẻ 5M"
+    },
+    "Gate": {
+      "GATE10": "thẻ 10k",
+      "GATE20": "thẻ 20k",
+      "GATE50": "thẻ 50k",
+      "GATE100": "thẻ 100k",
+      "GATE200": "thẻ 200k",
+      "GATE300": "thẻ 300k",
+      "GATE500": "thẻ 500k",
+      "GATE1000": "thẻ 1M",
+      "GATE2000": "thẻ 2M",
+      "GATE3000": "thẻ 3M",
+      "GATE5000": "thẻ 5M"
+    },
+    "Garena":{
+      "GARENA10": "thẻ 10k",
+      "GARENA20": "thẻ 20k",
+      "GARENA50": "thẻ 50k",
+      "GARENA100": "thẻ 100k",
+      "GARENA200": "thẻ 200k",
+      "GARENA300": "thẻ 300k",
+      "GARENA500": "thẻ 500k",
+      "GARENA1000": "thẻ 1M",
+      "GARENA2000": "thẻ 2M",
+      "GARENA3000": "thẻ 3M",
+      "GARENA5000": "thẻ 5M"
+    },
+    "Mega": {
+      "MEGA10": "thẻ 10k",
+      "MEGA20": "thẻ 20k",
+      "MEGA50": "thẻ 50k",
+      "MEGA100": "thẻ 100k",
+      "MEGA200": "thẻ 200k",
+      "MEGA300": "thẻ 300k",
+      "MEGA500": "thẻ 500k",
+      "MEGA1000": "thẻ 1M",
+      "MEGA2000": "thẻ 2M",
+      "MEGA3000": "thẻ 3M",
+      "MEGA5000": "thẻ 5M"
+    },
+    "SCoin": {
+      "SCOIN10": "thẻ 10k",
+      "SCOIN20": "thẻ 20k",
+      "SCOIN50": "thẻ 50k",
+      "SCOIN100": "thẻ 100k",
+      "SCOIN200": "thẻ 200k",
+      "SCOIN300": "thẻ 300k",
+      "SCOIN500": "thẻ 500k",
+      "SCOIN1000": "thẻ 1M",
+      "SCOIN2000": "thẻ 2M",
+      "SCOIN3000": "thẻ 3M",
+      "SCOIN5000": "thẻ 5M"
+    },
+    "OnCash": {
+      "ONCASH10": "thẻ 10k",
+      "ONCASH20": "thẻ 20k",
+      "ONCASH50": "thẻ 50k",
+      "ONCASH100": "thẻ 100k",
+      "ONCASH200": "thẻ 200k",
+      "ONCASH300": "thẻ 300k",
+      "ONCASH500": "thẻ 500k",
+      "ONCASH1000": "thẻ 1M",
+      "ONCASH2000": "thẻ 2M",
+      "ONCASH3000": "thẻ 3M",
+      "ONCASH5000": "thẻ 5M"
+    },
+    "Soha":{
+      "SOHA10": "thẻ 10k",
+      "SOHA20": "thẻ 20k",
+      "SOHA50": "thẻ 50k",
+      "SOHA100": "thẻ 100k",
+      "SOHA200": "thẻ 200k",
+      "SOHA300": "thẻ 300k",
+      "SOHA500": "thẻ 500k",
+      "SOHA1000": "thẻ 1M",
+      "SOHA2000": "thẻ 2M",
+      "SOHA3000": "thẻ 3M",
+      "SOHA5000": "thẻ 5M"
+    },
+    "Funtap": {
+      "FUNTAP10": "thẻ 10k",
+      "FUNTAP20": "thẻ 20k",
+      "FUNTAP50": "thẻ 50k",
+      "FUNTAP100": "thẻ 100k",
+      "FUNTAP200": "thẻ 200k",
+      "FUNTAP300": "thẻ 300k",
+      "FUNTAP500": "thẻ 500k",
+      "FUNTAP1000": "thẻ 1M",
+      "FUNTAP2000": "thẻ 2M",
+      "FUNTAP3000": "thẻ 3M",
+      "FUNTAP5000": "thẻ 5M"
+    }
+  }
+}

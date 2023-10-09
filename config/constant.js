@@ -35,7 +35,31 @@ const CONSTANT = {
 
   OK: 'OK',
 
-  POSTGRES_DB: 'postgres'
+  POSTGRES_DB: 'postgres',
+
+  PINCODE_DETAIL: {
+    QUANTITY: {
+      MIN: "1",
+      MAX: "100"
+    },
+    
+
+    TYPE_SERVICE:{
+      ONE: "one",
+      MANY: "many",
+    },
+
+    SERVICE_CODE: {
+    },
+
+    STATUS: {
+      SUCCESS: "Success",
+      ERROR: "Error",
+      RETRY: "Retry",
+      PENDING: "Pending",
+    },
+    UNKNOWN: "unknown",
+  },
 };
 
 module.exports = CONSTANT;
